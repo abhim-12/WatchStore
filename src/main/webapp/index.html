@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Watch Store</title>
+    <style>
+        body {background-color: powderblue;}
+        h1 {color: black;
+            font-family: Times New Roman;}
+        #options {border: 1px solid black;
+                  padding: 10px;
+                  font-family: Helvetica;}
+        #sub {background-color: bisque;
+              font-family: Helvetica;
+              color: black;
+              padding: 10px;}
+        #scroll {
+                font-family: Helvetica;
+                color: gray;
+                size: 15px;}
+    </style>
+</head>
+<body>
+<center>
+    <h1>
+       SELECT THE BRAND
+    </h1>
+
+    <marquee behavior="scroll" direction="right" id="scroll" scrollamount="10">Select a brand to get the details of the available products and the prices</marquee>
+
+    <form method="post" action="SelectWatch">
+        <br>
+        <select name="Type" size="1" id="options">
+            <option>FOSSIL</option>
+            <option>TISSOT</option>
+            <option>OMEGA</option>
+            <option>TITAN</option>
+        </select>
+        <br><br>
+        <input type="submit" id="sub">
+    </form>
+</center>
+
+
+</body>
+</html>
